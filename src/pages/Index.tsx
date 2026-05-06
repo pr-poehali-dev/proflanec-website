@@ -249,19 +249,19 @@ function HomeSection({ onNavigate }: { onNavigate: (s: Section) => void }) {
           <div className="max-w-2xl">
             <div className="flex items-center gap-3 mb-6 animate-fade-in">
               <span className="rule-line"></span>
-              <span className="font-ibm text-xs tracking-widest uppercase text-blue-300">ООО «ПРОФЛАНЕЦ» — Екатеринбург</span>
+              <span className="font-ibm text-xs tracking-widest uppercase text-[#60aaff]">ООО «ПРОФЛАНЕЦ» — Екатеринбург</span>
             </div>
             <h1 className="font-oswald text-4xl md:text-5xl lg:text-6xl font-medium text-white leading-tight mb-6 animate-slide-up stagger-1">
               Производство<br />фланцев и<br />трубопроводной<br />арматуры
             </h1>
-            <p className="font-ibm text-base text-slate-300 leading-relaxed mb-8 max-w-xl animate-slide-up stagger-2">
+            <p className="font-ibm text-base text-slate-100 leading-relaxed mb-8 max-w-xl animate-slide-up stagger-2">
               Фланцы, фланцевые детали, грязевики, регистры, опоры — по ГОСТ, ASME, DIN. Изготовление от 1 шт. Доставка по России и СНГ.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 animate-slide-up stagger-3">
               <button onClick={() => onNavigate("catalog")} className="flex items-center justify-center gap-2 bg-white text-navy font-oswald text-sm font-medium px-6 py-3 hover:bg-slate-100 transition-colors uppercase tracking-wider">
                 <Icon name="BookOpen" size={16} />Каталог продукции
               </button>
-              <button onClick={() => onNavigate("contacts")} className="flex items-center justify-center gap-2 border border-white/40 text-white font-oswald text-sm font-medium px-6 py-3 hover:bg-white/10 transition-colors uppercase tracking-wider">
+              <button onClick={() => onNavigate("contacts")} className="flex items-center justify-center gap-2 border-2 border-white text-white font-oswald text-sm font-medium px-6 py-3 hover:bg-white hover:text-navy transition-colors uppercase tracking-wider">
                 <Icon name="MessageSquare" size={16} />Запросить цену
               </button>
             </div>
